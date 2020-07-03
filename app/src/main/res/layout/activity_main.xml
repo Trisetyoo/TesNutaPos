@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/text_nama_bank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:hint="Nama Bank"
+        app:layout_constraintBottom_toBottomOf="@id/text_no_rek"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/text_no_rek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:hint="No. Rek"
+        app:layout_constraintBottom_toBottomOf="@id/text_atas_nama"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_nama_bank"
+        />
+
+    <EditText
+        android:id="@+id/text_atas_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:hint="Atas Nama"
+        app:layout_constraintBottom_toBottomOf="@id/button_insert_rekening"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_no_rek"
+        />
+
+    <Button
+        android:id="@+id/button_insert_rekening"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insert Rekening"
+        app:layout_constraintBottom_toBottomOf="@id/button_insert_uang"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/text_pengirim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:hint="Pengirim"
+        app:layout_constraintBottom_toBottomOf="@id/text_keterangan"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/button_insert_rekening"
+        />
+
+    <EditText
+        android:id="@+id/text_keterangan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:hint="Keterangan"
+        app:layout_constraintBottom_toBottomOf="@id/text_jumlah"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_pengirim"
+        />
+
+    <EditText
+        android:id="@+id/text_jumlah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:hint="Rp"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@id/text_no_rek_2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_keterangan"
+        />
+
+    <EditText
+        android:id="@+id/text_no_rek_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:hint="No. Rek"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@id/button_insert_uang"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_jumlah"
+        />
+
+    <Button
+        android:id="@+id/button_insert_uang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insert Uang Masuk"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_no_rek_2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
